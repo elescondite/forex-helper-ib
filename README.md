@@ -37,7 +37,7 @@ The only required configuration option is the *Base Currency* which can be chang
 The warning and maximum thresholds are purely informational and not required. 
 
 Variable | Value | Notes
----+---+---
+--- | --- | ---
 Risk Warning (Account Currency) | 300 | Risk amounts greater than this level (in account currency) are highlighted in yellow
 Risk Maximum (Account Currency) | 500 | Risk amounts greater than this level (in account currency) are highlighted in red
 Margin Warning | 2,000 | Margin requirements greater than this level (in account currency) are highlighted in yellow
@@ -102,7 +102,7 @@ The *Entry* sheet is where all trades are entered and analysed. The important ar
  The columns in the *trade parameters* section are the only ones editable (the rest are calculated). The columns are defined as:
 
 Column | Description
------+-----
+----- | -----
 Status | A fixed list of statuses used to separate trades. See below for the complete list.
 Source |  *Optional*. A mnemonic or other key to segregate orders. You may use different algorithms for example to generate trade ideas -- each one with a different "key". 
 Date | The date of the trade idea, not necessarily the execution date.
@@ -115,7 +115,7 @@ Stop Loss | Stop loss price
 Target Price | Target (profit) price
 
 Order Status | Can be Archived? | Can Add to Basket? | Notes
------+-----+-----+-----
+----- | ----- | ----- | -----
 Pending | No | Yes | Only trades in *Pending* status will be selected to generate a *TWS Basket Order* (See below)
 Submitted  | No | No | An informational status only. Has no effect.
 Working | No | No | An informational status only. Has no effect within the spreadsheet
