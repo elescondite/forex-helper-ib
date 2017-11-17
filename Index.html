@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body style="margin:0;">
+  <div id="chart" style="width:1600px;height:1000px;">
+  
+    <!-- TradingView Widget BEGIN -->
+<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+<script type="text/javascript">
+new TradingView.widget({
+  "autosize": true,
+  "symbol":   "<?= currencies[0] ?>",
+  "interval": "D",
+  "timezone": "Etc/UTC",
+  "theme": "Light",
+  "style": "1",
+  "locale": "en",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "withdateranges": true,
+  "hide_side_toolbar": false,
+  "hidevolume": true,
+  "allow_symbol_change": true,
+  "watchlist": [
+  <? for (var i = 0; i < currencies.length; i++) { ?>
+  "<?= currencies[i] ?>"
+  <? if (i < currencies.length) { ?>, <? } ?>
+  <? } ?>
+  ],
+  "details": true,
+  "hideideas": true,
+  "studies": [
+    "MAExp@tv-basicstudies"
+  ],
+  "show_popup_button": true,
+  "popup_width": "1600",
+  "popup_height": "1000",
+  "referral_id": "6248"
+});
+</script>
+<!-- TradingView Widget END -->
+
+  </div>
+<!--  <input type="button" value="Close"
+        onclick="google.script.host.close()" /> -->
+  </body>
+</html>
