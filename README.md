@@ -18,7 +18,7 @@ An Interactive Brokers account is *not* required.
 
 ### Installing
 
-1. Grab a copy of the [latest version of the spreadsheet here](https://docs.google.com/spreadsheets/d/11ARetX5yOQdYf7fOrdaBrDB8Wi9uYBtWcfIAo-3OZg4/copy)
+1. Grab a copy of the [latest version of the spreadsheet here](https://docs.google.com/spreadsheets/d/1dnpFY3PE93ndL3QNbTE-nOsSwKaS07P7HQilXE8k_FA/copy)
 2. Google will ask for your authorization the first time you open the sheet. This is normal and nothing to be worried about. The sheet can not modify your Forex account in any way. If you are at all unsure, you can review the source code here in GitHub.
 
 
